@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: RGB(245,246,247);
+}
+
+.header {
+
+}
+
+.header .question {
+    width: 80%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 2px solid RGB(42,129,204);
+    margin: auto;
+    overflow: hidden;
+}
+
+.header .question span {
+    font-size: 28px;
+    float: left;
+    margin-top: 10px;
+}
+
+.header .question input {
+    width: 100px;
+    height: 30px;
+    background-color: RGB(95,206,27);
+    float: right;
+    margin-top: 40px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.header .question input:hover {
+    cursor: pointer;
+}
+
+.main {
+    /*width: 90%;*/
+    /*margin-top: 10px;*/
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.main .show {
+    margin: auto;
+    border-top: 1px solid #dedede;
+    border-radius: 3px;
+}
+
+.main .show .show-header {
+    color: RGB(153,153,153);
+}
+
+.main .show .show-header, .main .list .list-item {
+    margin: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #dedede;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main .show .show-header>span, .main .list .list-item>span{
+    float: left;
+}
+
+.main .show .show-header .topic0,.main .list .list-item .topic0 {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.main .list .list-item .topic0 {
+    font-weight: bold;
+}
+
+.main .show .show-header .topic1, .topic1, .topic2, .topic3 {
+    width: 13%;
+    text-align: center;
+    color: RGB(112,112,112);
+}
+
+.main .list .list-item .topic0 a {
+    text-decoration: none;
+    color: black;
+}
+
+.main .list .list-item .topic0 a:hover {
+    color: RGB(202,12,22);
+}
+
+.main .show .list-item .topic1 a{
+    color: RGB(153,153,153);
+    text-decoration: none;
+}

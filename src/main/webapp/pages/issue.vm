@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表提问</title>
+    <link rel="stylesheet" href="/styles/issue.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/simditor/styles/simditor.css"/>
+    <script type="text/javascript" src="/simditor/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/module.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/hotkeys.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/uploader.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/simditor.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="topic">
+            <form action="/topic/issue" method="post">
+                <div class="title">
+                    <input type="text" name="title" placeholder="请输入标题">
+                </div>
+                <div class="content">
+                    <textarea name="content" placeholder="请输入正文" id="editor"></textarea>
+                    <script type="text/javascript">
+                        var editor = new Simditor({
+                            textarea: $('#editor')
+                        });
+                    </script>
+                </div>
+                <div class="button">
+                    <input type="submit" value="发表">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

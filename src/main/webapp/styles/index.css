@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bianje {
+    display: block;
+    height: 5px;
+    clear: both;
+    border: none;
+    background-color: transparent;
+}
+
+.header {
+    height: 40px;
+}
+
+.main {
+    background-image: url("../images/bg.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main .sign {
+    width: 400px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    box-shadow: 0 0 40px 10px #dedede;
+}
+
+.main .sign .title {
+    text-align: center;
+    /*height: 20px;*/
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: RGB(59,151,255);
+}
+
+.main .sign .error {
+    text-align: center;
+    color: red;
+    font-size: 13px;
+}
+
+.main .sign .success {
+    text-align: center;
+    color: #23B8FF;
+    font-size: 13px;
+}
+
+.main .sign .row{
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    margin: 10px;
+}
+
+.main .sign .row span {
+    height: 50px;
+    width: 90%;
+    float: left;
+}
+
+.main .sign .row span input {
+    width: 90%;
+    /*height: 45px;*/
+    line-height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.main .sign .row label {
+    width: 10%;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: gray;
+}
+
+.button {
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.button  label input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #23B8FF;
+    font-size: 16px;
+    color: white;
+}
+
+.button span {
+    float: left;
+    width: 50%;
+    float: left;
+    /*background-color: ;*/
+}
+
+.code span {
+    width: 40% !important;
+    float: left;
+    height: 50px;
+}
+
+.code span input {
+    margin-left: 20px;
+}
+
+.code img{
+    width: 60%;
+    height: 50px;
+    float: left;
+}
+
+.code img:hover {
+    cursor: pointer;
+}
+
+.code label{
+    width: 60%;
+    height: 50px;
+    float: left;
+}
+
+.main .sign .skip {
+    /*width: 80%;*/
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-top: 1px solid #dedede;
+    font-size: 16px;
+}
+
+.main .sign .skip a {
+    text-decoration: none;
+
+}
+

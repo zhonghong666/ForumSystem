@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问答</title>
+    <link rel="stylesheet" href="/styles/show.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="question">
+            <span>热门问答</span>
+            <input type="button" value="我要提问" onclick="location.href='issue.vm'">
+        </div>
+    </div>
+    <div class="main">
+        <div class="show">
+            <div class="show-header">
+                <span class="topic0">标题</span>
+                <span class="topic1">提问人</span>
+                <span class="topic2">发表时间</span>
+                <span class="topic3">人气</span>
+            </div>
+            <div class="list">
+                #foreach($topic in $topicList)
+                    <div class="list-item">
+                        <span class="topic0">
+                            <a href="">${topic.title}</a>
+                        </span>
+                        <span class="topic1">
+                            <a href="">${topic.user.username}</a>
+                        </span>
+                        <span class="topic2">${topic.issueTime}</span>
+                        <span class="topic3">999</span>
+                    </div>
+                #end
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>

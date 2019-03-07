@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 20px;
+}
+
+.main .topic {
+    width: 80%;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin: auto;
+}
+
+
+.main .topic .title {
+    border-bottom: 1px solid RGB(238,238,238);
+}
+
+.main .topic .button {
+    border-top: 1px solid RGB(238,238,238);
+}
+
+.main .topic .title input {
+    width: 96%;
+    margin-left: 1%;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    outline: none;
+}
+
+.main .topic .button {
+    text-align: right;
+}
+
+.main .topic .button input {
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background-color: RGB(35,184,255);
+    border:none;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.main .topic .content .simditor {
+    border: none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+</head>
+<body>
+<div class="header"></div>
+<div class="main">
+    <div class="sign">
+        <div class="bianje"></div>
+        <p class="title">注册斯贝儿</p>
+        <p class="error">$!{fail}</p>
+        $!{session.removeAttribute('fail')}
+        <form action="/signUp" method="post">
+            <div class="row">
+                <label>
+                    <i class="fa fa-user-o"></i>
+                </label>
+                <span>
+                    <input type="text" name="username" placeholder="请输入用户名">
+                </span>
+            </div>
+            <div class="row">
+                <label>
+                    <i class="fa fa-key"></i>
+                </label>
+                <span>
+                    <input type="password" name="pwd" placeholder="请输入密码">
+                </span>
+            </div>
+            <div class="row">
+                <label>
+                    <i class="fa fa-keyboard-o"></i>
+                </label>
+                <span>
+                            <input type="password" name="confirm" placeholder="请确认密码">
+                        </span>
+            </div>
+            <div class="row code">
+                <span>
+                    <input type="text" name="code" placeholder="请输入验证码">
+                </span>
+                <lable>
+                    <img src="/code/yzm" alt="" id="img" title="点击刷新" onclick="renovate()">
+                </lable>
+            </div>
+            <div class="button">
+                <label>
+                    <input type="submit" value="注册">
+                </label>
+            </div>
+            <div class="skip">
+                已有账号？<a href="/pages/index.vm">立即登录</a>
+            </div>
+        </form>
+        <div class="bianje"></div>
+    </div>
+</div>
+</body>
+<script>
+    function renovate() {
+        var img = document.getElementById("img");
+        img.src = img.src + "/" + Math.random();
+    }
+</script>
+</html>

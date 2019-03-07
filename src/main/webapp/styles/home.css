@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: RGB(245,245,245);
+    /*border-bottom: 1px solid RGB(195,195,195);*/
+}
+
+.header .status {
+    width: 96%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header .status>div {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header .status .welcome {
+    width: 40%;
+}
+
+.header .status .welcome span a {
+    color: RGB(243,127,100);
+}
+
+.header .status .welcome a:hover {
+    color: RGB(243,127,100);
+}
+
+.header .status .welcome a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: RGB(135,135,135);
+}
+
+.header .status .operation {
+    width: 60%;
+    text-align: left;
+}
+
+.header .status .operation a{
+    text-decoration: none;
+    margin-left: 7%;
+    color: RGB(135,135,135);
+}
+
+.header .status .operation a:hover {
+    color: RGB(243,127,100);
+}
+
+.header .status .operation i {
+    margin-right: 5px;
+    font-size: 18px;
+}
