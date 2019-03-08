@@ -11,7 +11,7 @@ body {
 }
 
 .header .question {
-    width: 80%;
+    width: 90%;
     height: 80px;
     line-height: 80px;
     border-bottom: 2px solid RGB(42,129,204);
@@ -45,7 +45,7 @@ body {
     /*width: 90%;*/
     /*margin-top: 10px;*/
     background-color: white;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 

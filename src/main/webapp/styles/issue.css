@@ -20,10 +20,12 @@ body {
 
 .main .topic .title {
     border-bottom: 1px solid RGB(238,238,238);
+    background-color: white;
 }
 
 .main .topic .button {
     border-top: 1px solid RGB(238,238,238);
+    background-color: white;
 }
 
 .main .topic .title input {

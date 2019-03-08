@@ -15,7 +15,7 @@
             <a href=""><i class="fa fa-video-camera"></i>视频</a>
             <a href=""><i class="fa fa-diamond"></i>头条</a>
             <a href=""><i class="fa fa-newspaper-o"></i>新闻</a>
-            <a href="/topic/list"><i class="fa fa-compass"></i>问答</a>
+            <a href="/pages/show.vm"><i class="fa fa-compass"></i>问答</a>
             <a href=""><i class="fa fa-cog"></i>个人中心</a>
         </div>
     </div>

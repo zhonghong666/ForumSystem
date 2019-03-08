@@ -4,6 +4,7 @@
 .top {
     background-color: white;
     /*border-bottom: 1px solid RGB(195,195,195);*/
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
 }
 
 .top .status {

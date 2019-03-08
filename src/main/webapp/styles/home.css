@@ -9,6 +9,19 @@ body {
 .header {
     background-color: RGB(255,255,255);
     /*border-bottom: 1px solid RGB(195,195,195);*/
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+
+ul, li {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #707070;
 }
 
 .header .status {
@@ -59,4 +72,116 @@ body {
 .header .status .operation i {
     margin-right: 5px;
     font-size: 18px;
+}
+
+
+.bodyer {
+    overflow: hidden;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: white;*/
+    margin-top: 10px;
+    height: 100%;
+}
+
+.bodyer .left {
+    width: 10%;
+    background-color: white;
+    float: left;
+    margin-right: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.bodyer .left ul {
+    text-align: center;
+    overflow: hidden;
+}
+
+.bodyer .left ul li{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    /*margin-bottom: 1px;*/
+    float: left;
+    margin-top: 2px;
+}
+
+.bodyer .left ul li:hover {
+    background-color: RGB(244,68,68);
+}
+
+.bodyer .left ul #frist, #one {
+    background-color: RGB(244,68,68);
+    color: white;
+}
+
+.bodyer .left ul a:hover {
+    color: white;
+}
+
+.bodyer .center {
+    width: 62%;
+    height: 100px;
+    float: left;
+    margin-right: 12px;
+}
+
+.bodyer .center .ad {
+    width: 100%;
+    height: 100px;
+}
+
+.bodyer .center .ad img{
+    width: 100%;
+    height: 100%;
+}
+
+.bodyer .center .diagram {
+    width: 65%;
+    height: 300px;
+    background-color: red;
+    float: left;
+    margin-top: 8px;
+}
+
+.bodyer .center .center-right {
+    width: 34%;
+    height: 300px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 8px;
+}
+
+.bodyer .center .center-right img {
+    width: 100%;
+    height: 49%;
+    float: left;
+
+}
+
+.bodyer .center .center-right #center-right-second {
+    margin-top: 2%;
+}
+
+.bodyer .center .text {
+    width: 100%;
+    float: left;
+    margin-top: 6px;
+}
+
+.bodyer .center .text .text-list {
+    width: 100%;
+    height: 150px;
+    background-color: red;
+    border: 1px solid #dedede;
+}
+
+.bodyer .right {
+    width: 26%;
+    background-color: #23B8FF;
+    height: 100px;
+    float: left;
 }

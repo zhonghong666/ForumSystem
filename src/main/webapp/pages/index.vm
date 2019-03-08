@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
-    <link rel="stylesheet" href="/styles/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">    <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
 </head>
 <body>
-<div class="header">
+    <div class="header">
     <div class="status">
         <div class="welcome">
             #if($session.USER)
@@ -23,11 +23,58 @@
             <a href=""><i class="fa fa-video-camera"></i>视频</a>
             <a href=""><i class="fa fa-diamond"></i>头条</a>
             <a href=""><i class="fa fa-newspaper-o"></i>新闻</a>
-            <a href="/topic/list"><i class="fa fa-compass"></i>问答</a>
+            <a href="/pages/show.vm"><i class="fa fa-compass"></i>问答</a>
             <a href=""><i class="fa fa-cog"></i>个人中心</a>
         </div>
     </div>
 
 </div>
+    <div class="bodyer">
+        <div class="left">
+            <ul>
+                <a href="" id="one"><li id="frist">推荐</li></a>
+                <a href=""><li>关注</li></a>
+                <a href=""><li>专题</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+                <a href=""><li>推荐</li></a>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="ad">
+                <img src="/images/index/first.png" alt="">
+            </div>
+            <div class="diagram">
+
+            </div>
+            <div class="center-right">
+                <img src="/images/index/2.jpg" alt="" id="center-right-first">
+                <img src="/images/index/3.png" alt="" id="center-right-second">
+            </div>
+            <div class="text">
+                <div class="text-list">
+
+                </div>
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+    <div class="footer"></div>
 </body>
 </html>

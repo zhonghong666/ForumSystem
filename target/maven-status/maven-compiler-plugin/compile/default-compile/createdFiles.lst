@@ -3,6 +3,7 @@ com\zhonghong\helper\DataAccessException.class
 com\zhonghong\servlet\TopicChangeServlet.class
 com\zhonghong\helper\StringHelper.class
 com\zhonghong\servlet\FileUploadServlet.class
+com\zhonghong\servlet\PreparedServlet.class
 com\zhonghong\servlet\TopicListServlet.class
 com\zhonghong\dao\TopicDao.class
 com\zhonghong\helper\EncryptHelper.class
