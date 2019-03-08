@@ -16,7 +16,7 @@ body {
     line-height: 80px;
     border-bottom: 2px solid RGB(42,129,204);
     margin: auto;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .header .question span {
@@ -61,7 +61,7 @@ body {
 
 .main .show .show-header, .main .list .list-item {
     margin: auto;
-    overflow: hidden;
+    overflow: visible;
     border-bottom: 1px solid #dedede;
     height: 40px;
     line-height: 40px;

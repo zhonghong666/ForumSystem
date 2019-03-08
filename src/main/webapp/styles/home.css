@@ -21,7 +21,6 @@ ul, li {
 
 a{
     text-decoration: none;
-    color: #707070;
 }
 
 .header .status {
@@ -76,13 +75,12 @@ a{
 
 
 .bodyer {
-    overflow: hidden;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
     /*background-color: white;*/
     margin-top: 10px;
-    height: 100%;
+    overflow: visible;
 }
 
 .bodyer .left {
@@ -92,6 +90,7 @@ a{
     margin-right: 12px;
     text-align: center;
     margin-top: 5px;
+    /*font-size: 16px;*/
 }
 
 .bodyer .left ul {
@@ -122,9 +121,12 @@ a{
     color: white;
 }
 
+.bodyer .left ul a {
+    color: #707070;
+}
+
 .bodyer .center {
     width: 62%;
-    height: 100px;
     float: left;
     margin-right: 12px;
 }
@@ -142,9 +144,12 @@ a{
 .bodyer .center .diagram {
     width: 65%;
     height: 300px;
-    background-color: red;
     float: left;
     margin-top: 8px;
+}
+
+.broadcastMe-item img {
+    height: 300px;
 }
 
 .bodyer .center .center-right {
@@ -174,10 +179,79 @@ a{
 
 .bodyer .center .text .text-list {
     width: 100%;
-    height: 150px;
-    background-color: red;
-    border: 1px solid #dedede;
+    height: 130px;
+    background-color: white;
+    border-bottom: 1px solid #dedede;
 }
+
+.bodyer .center .text .text-list h2{
+    color: RGB(61,61,61);
+    margin-left: 30px;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.bodyer .center .text .text-list h2:hover {
+    color: RGB(244,68,68);
+}
+
+.bodyer .center .text .text-list .summary{
+    color: RGB(138,138,138);
+    margin-left: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.bodyer .center .text .text-list .info {
+    margin-top: 15px;
+    margin-left: 30px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.bodyer .center .text .text-list .info .info-left {
+    width: 20%;
+    float: left;
+}
+
+.bodyer .center .text .text-list .info .info-left a{
+    color: RGB(61,61,61);
+}
+
+.bodyer .center .text .text-list .info .info-left a:hover {
+    color: #428bca;
+}
+
+.bodyer .center .text .text-list .info .info-left .fa {
+    margin-right: 10px;
+}
+
+.bodyer .center .text .text-list .info .time {
+    width: 40%;
+    float: left;
+    color: RGB(138,138,138);
+}
+
+.bodyer .center .text .text-list .info .num {
+    width: 20%;
+    float: left;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.bodyer .center .text .text-list .info .num .person:hover {
+    color: RGB(51,153,235);
+}
+
+.bodyer .center .text .text-list .info .num span {
+    /*margin-right: 10px;*/
+    color: RGB(138,138,138);
+}
+
+.bodyer .center .text .text-list .info .num c {
+    color: RGB(51,153,235);
+}
+
 
 .bodyer .right {
     width: 26%;

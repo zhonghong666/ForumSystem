@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/styles/broadcast-me.css">
+    <script src="/scripts/broadcast-me.js"></script>
 </head>
 <body>
     <div class="header">
@@ -35,46 +38,109 @@
                 <a href="" id="one"><li id="frist">推荐</li></a>
                 <a href=""><li>关注</li></a>
                 <a href=""><li>专题</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
-                <a href=""><li>推荐</li></a>
+                <a href=""><li>今日头条</li></a>
+                <a href=""><li>经济论坛</li></a>
+                <a href=""><li>校园趣事</li></a>
+                <a href=""><li>职业交流</li></a>
+                <a href=""><li>时尚资讯</li></a>
+                <a href=""><li>情感天地</li></a>
+                <a href=""><li>娱乐八卦</li></a>
+                <a href=""><li>视频专区</li></a>
+                <a href=""><li>理财前线</li></a>
+                <a href=""><li>汽车时代</li></a>
+                <a href=""><li>国际观察</li></a>
+                <a href=""><li>其他</li></a>
             </ul>
         </div>
         <div class="center">
             <div class="ad">
                 <img src="/images/index/first.png" alt="">
             </div>
-            <div class="diagram">
-
+            <div class="diagram" id="box">
+                <script>
+                    var box = document.getElementById('box');
+                    var imagesAndUrl = [{
+                        imgSrc : '/images/diagram/3.jpg',
+                        linkHref : "#"
+                    },{
+                        imgSrc : '/images/diagram/second.jpg',
+                        linkHref : '1'
+                    },{
+                        imgSrc : '/images/diagram/four.jpg',
+                        linkHref : '#'
+                    },{
+                        imgSrc : '/images/diagram/1.jpg',
+                        linkHref : '#'
+                    },{
+                        imgSrc : '/images/diagram/2.jpg',
+                        linkHref : '#'
+                    }];
+                    // box => 你需要创建轮播图的父级元素
+                    // imagesAndUrl => 数组，存放图片地址以及图片的连接地址
+                    var broadcast = new Broadcast(box,imagesAndUrl,{
+                        transitionTime : 700, // 动画过渡时间，默认为800ms
+                        intervalTime : 3000 // 图片切换时间，默认为5s
+                    });
+                </script>
             </div>
             <div class="center-right">
                 <img src="/images/index/2.jpg" alt="" id="center-right-first">
                 <img src="/images/index/3.png" alt="" id="center-right-second">
             </div>
             <div class="text">
-                <div class="text-list">
+                #foreach($topic in $topicList)
 
+                <div class="text-list">
+                    <a href="/topic/detail?id=${topic.id}">
+                        <h2>
+                            #if($topic.title.length()>30)
+                                #set($title = $topic.title.substring(0,30))
+                                ${title}...
+                            #else
+                                $!{topic.title}
+                            #end
+                        </h2>
+                    </a>
+                    <div class="summary">
+                        #if($topic.content.length()>50)
+                            #set($str = $topic.content.substring(0,50))
+                            ${str}...
+                        #else
+                            $!{topic.content}
+                        #end
+                    </div>
+                    <div class="info">
+                        <span class="info-left">
+                            <a href="">
+                                <lable class="fa fa-user-o"></lable>
+                                ${topic.getUser().getUsername()}
+                            </a>
+                        </span>
+                        <span class="time">
+                            ${topic.getIssueTime()}
+                        </span>
+                        <div class="num">
+                            <a href="">
+                                <span class="person">阅读数&nbsp;</span> <c>999&nbsp;</c>
+                            </a>
+                            <a href="">
+                                <span> &nbsp;评论</span>
+                            </a>
+                        </div>
+##                        <span>
+##                            <lable class="fa fa-user-o"></lable>
+##                            <a href="" id="author">${topic.getUser().getUsername()}</a>
+##                        </span>
+##                        <span id="time">${topic.getIssueTime()}</span>
+##                        <a href=""><span id="num"><span>阅读数</span> <label >999 </label></span></a> <a href="">评论</a>
+                    </div>
                 </div>
+                #end
             </div>
         </div>
-        <div class="right">
+            <div class="right">
 
-        </div>
-    </div>
+            </div>
     <div class="footer"></div>
 </body>
 </html>
