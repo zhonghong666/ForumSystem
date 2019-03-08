@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>注册</title>
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
 </head>
 <body>
@@ -54,7 +53,7 @@
                 </label>
             </div>
             <div class="skip">
-                已有账号？<a href="/pages/index.vm">立即登录</a>
+                已有账号？<a href="/pages/signin.vm.vm">立即登录</a>
             </div>
         </form>
         <div class="bianje"></div>

@@ -11,7 +11,6 @@
     <meta charset="UTF-8">
     <title>登录</title>
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
 </head>
 <body>
@@ -22,6 +21,8 @@
         <p class="title">登录斯贝儿</p>
         <p class="error">$!{fail}</p>
         $!{session.removeAttribute('fail')}
+        <p class="error">$!{success}</p>
+        $!{session.removeAttribute('success')}
         <form action="/signIn" method="post">
             <div class="row">
                 <label>

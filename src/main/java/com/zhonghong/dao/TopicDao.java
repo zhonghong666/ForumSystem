@@ -51,7 +51,7 @@ public class TopicDao {
         String SQL = "select id, title, content, author, issue_time, issue_ip from t_topic where id = ?";
 
         JdbcHelper h = JdbcHelper.getInstance();
-        ResultSet rs = h.query(SQL);
+        ResultSet rs = h.query(SQL,id);
         try{
             if (rs.next()){
                 t = this.lookUp(rs);
@@ -65,6 +65,16 @@ public class TopicDao {
         h.release();
 
         return t;
+    }
+
+    public boolean update(Topic t,int id) {
+        String SQL = "update t_topic set title = ?, content = ? where id = ?";
+
+        JdbcHelper h = JdbcHelper.getInstance();
+        int count = h.update(SQL, t.getTitle(), t.getContent(), id);
+        h.release();
+
+        return count == 1;
     }
 
     private Topic lookUp(ResultSet rs) {

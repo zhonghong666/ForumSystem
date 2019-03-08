@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
-</head>
-<body>
-<div class="header">
+
+<div class="top">
     <div class="status">
         <div class="welcome">
             #if($session.USER)
@@ -29,5 +21,3 @@
     </div>
 
 </div>
-</body>
-</html>

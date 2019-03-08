@@ -1,62 +1,57 @@
 @charset "UTF-8";
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: RGB(245,246,247);
-}
 
-.header {
-    background-color: RGB(255,255,255);
+.top {
+    background-color: white;
     /*border-bottom: 1px solid RGB(195,195,195);*/
 }
 
-.header .status {
+.top .status {
     width: 96%;
     margin: auto;
     overflow: hidden;
 }
 
-.header .status>div {
+.top .status>div {
     float: left;
     height: 30px;
     line-height: 30px;
 }
 
-.header .status .welcome {
+.top .status .welcome {
     width: 40%;
 }
 
-.header .status .welcome span a {
+.top .status .welcome span a {
     color: RGB(243,127,100);
 }
 
-.header .status .welcome a:hover {
+.top .status .welcome a:hover {
     color: RGB(243,127,100);
 }
 
-.header .status .welcome a {
+.top .status .welcome a {
     margin-left: 10px;
     text-decoration: none;
     color: RGB(135,135,135);
 }
 
-.header .status .operation {
+.top .status .operation {
     width: 60%;
     text-align: left;
 }
 
-.header .status .operation a{
+.top .status .operation a{
     text-decoration: none;
     margin-left: 7%;
     color: RGB(135,135,135);
 }
 
-.header .status .operation a:hover {
+.top .status .operation a:hover {
     color: RGB(243,127,100);
 }
 
-.header .status .operation i {
+.top .status .operation i {
     margin-right: 5px;
     font-size: 18px;
 }

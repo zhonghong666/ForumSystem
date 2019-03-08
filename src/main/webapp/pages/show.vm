@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>问答</title>
+    <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/show.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    #parse("/pages/header.vm")
+
     <div class="header">
         <div class="question">
             <span>热门问答</span>
@@ -25,7 +30,7 @@
                 #foreach($topic in $topicList)
                     <div class="list-item">
                         <span class="topic0">
-                            <a href="">${topic.title}</a>
+                            <a href="/topic/detail?id=${topic.id}">${topic.title}</a>
                         </span>
                         <span class="topic1">
                             <a href="">${topic.user.username}</a>
