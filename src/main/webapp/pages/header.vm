@@ -1,4 +1,11 @@
 
+
+<link rel="stylesheet" href="/styles/header.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+
+<script language=javascript src='/scripts/jquery-1.11.3.js'></script>
+<script src="/scripts/onClick.js"></script>
 <div class="top">
     <div class="status">
         <div class="welcome">

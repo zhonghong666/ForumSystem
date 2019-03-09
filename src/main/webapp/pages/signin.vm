@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>登录</title>
 </head>
 <body>
 <!DOCTYPE html>
@@ -12,6 +12,8 @@
     <title>登录</title>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+    <script language=javascript src='/scripts/jquery-1.11.3.js'></script>
+    <script src="/scripts/onClick.js"></script>
 </head>
 <body>
 <div class="header"></div>

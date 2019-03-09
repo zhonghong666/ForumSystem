@@ -4,34 +4,11 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="/styles/home.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="/styles/broadcast-me.css">
     <script src="/scripts/broadcast-me.js"></script>
 </head>
 <body>
-    <div class="header">
-    <div class="status">
-        <div class="welcome">
-            #if($session.USER)
-                欢迎，${session.USER.username}
-                <a href="/signOut" style="color: RGB(243,127,100);">注销</a>
-            #else
-                <span><a href="/pages/signin.vm">亲，请登录</a> </span>
-                <label><a href="/pages/signup.vm">免费注册</a></label>
-            #end
-        </div>
-        <div class="operation">
-            <a href="/pages/index.vm"><i class="fa fa-home"></i>首页</a>
-            <a href=""><i class="fa fa-video-camera"></i>视频</a>
-            <a href=""><i class="fa fa-diamond"></i>头条</a>
-            <a href=""><i class="fa fa-newspaper-o"></i>新闻</a>
-            <a href="/pages/show.vm"><i class="fa fa-compass"></i>问答</a>
-            <a href=""><i class="fa fa-cog"></i>个人中心</a>
-        </div>
-    </div>
-
-</div>
+    #parse("/pages/header.vm")
     <div class="bodyer">
         <div class="left">
             <ul>
@@ -91,16 +68,16 @@
                 #foreach($topic in $topicList)
 
                 <div class="text-list">
-                    <a href="/topic/detail?id=${topic.id}">
                         <h2>
-                            #if($topic.title.length()>30)
-                                #set($title = $topic.title.substring(0,30))
-                                ${title}...
-                            #else
-                                $!{topic.title}
-                            #end
+                            <a href="/topic/detail?id=${topic.id}">
+                                #if($topic.title.length()>30)
+                                    #set($title = $topic.title.substring(0,30))
+                                    ${title}...
+                                #else
+                                    $!{topic.title}
+                                #end
+                            </a>
                         </h2>
-                    </a>
                     <div class="summary">
                         #if($topic.content.length()>50)
                             #set($str = $topic.content.substring(0,50))
@@ -127,20 +104,42 @@
                                 <span> &nbsp;评论</span>
                             </a>
                         </div>
-##                        <span>
-##                            <lable class="fa fa-user-o"></lable>
-##                            <a href="" id="author">${topic.getUser().getUsername()}</a>
-##                        </span>
-##                        <span id="time">${topic.getIssueTime()}</span>
-##                        <a href=""><span id="num"><span>阅读数</span> <label >999 </label></span></a> <a href="">评论</a>
                     </div>
                 </div>
                 #end
             </div>
         </div>
-            <div class="right">
-
+        <div class="right">
+            <div class="ad">
+                <div class="ad-top">
+                    <img src="/images/ad/first.jpg" alt="">
+                </div>
+                <div class="ad-bottem">
+                    <img src="/images/ad/second.png" alt="">
+                </div>
             </div>
+            <div class="recommend">
+                <div class="recommend-top">
+                    <h3>
+                        <span class="fa fa-bolt"></span>
+                        <span id="text">今日推荐</span>
+                    </h3>
+                </div>
+                #foreach($num in [1..10])
+
+                <div class="recommend-list">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="/images/recommend/first.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            李彦宏回应百度落后：我们擅长技术含量高的
+                        </div>
+                    </a>
+                </div>
+                #end
+            </div>
+        </div>
     <div class="footer"></div>
 </body>
 </html>

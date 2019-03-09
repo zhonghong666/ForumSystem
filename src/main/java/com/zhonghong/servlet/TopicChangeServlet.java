@@ -28,13 +28,15 @@ public class TopicChangeServlet extends HttpServlet {
         if (u == null){
             session.setAttribute("fail", "先登录，再进行操作!!!");
             resp.sendRedirect("/pages/signin.vm");
+            return;
+        } else {
+            if (td.find(id).getUser().getId() != u.getId()){
+                session.setAttribute("fail", "你不是作者，无权修改!!!");
+                resp.sendRedirect("/pages/detail.vm");
+                return;
+            }
         }
 
-        if (td.find(id).getUser().getId() != u.getId()){
-            session.setAttribute("fail", "你不是作者，无权修改!!!");
-            resp.sendRedirect("/pages/detail.vm");
-            return;
-        }
         UserDao ud = new UserDao();
 
         Topic t = td.find(id);
