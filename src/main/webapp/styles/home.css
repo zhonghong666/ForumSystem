@@ -75,7 +75,7 @@ a{
 
 
 .bodyer {
-    width: 95%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     /*background-color: white;*/
@@ -274,7 +274,7 @@ a{
 
 
 .bodyer .right {
-    width: 26%;
+    width: 25%;
     /*background-color: #23B8FF;*/
     float: left;
 }
@@ -366,4 +366,75 @@ a{
 
 .bodyer .right .recommend .recommend-list .content:hover {
     color: RGB(244,68,68);
+}
+
+/*.bodyer .right .about {*/
+    /*width: 100%;*/
+    /*height: 100px;*/
+    /*margin-top: 10px;*/
+    /*background-color: red;*/
+/*}*/
+
+.bodyer .right .about {
+    /*height: 200px;*/
+    margin-bottom: 30px;
+}
+
+.bodyer .right .about .about-img {
+    width: 94%;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.bodyer .right .about .about-img img {
+    width: 46%;
+    height: 120px;
+    margin-left: 2%;
+}
+
+.bodyer .right .about .about-info {
+    width: 98%;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    border-top: 1px solid RGB(224,224,224);
+}
+
+
+
+.bodyer .right .about .about-info p {
+    margin-top: 10px;
+    /*text-align: center;*/
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.bodyer .right .about .about-info p .about-info-left {
+    font-style: normal;
+    float: left;
+    width: 30%;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.bodyer .right .about .about-info p .about-info-right {
+    font-style: normal;
+    float: left;
+    width: 60%;
+    margin-left: 15px;
+}
+
+.bodyer .right .about .about-info p .fa {
+    color: RGB(92,92,92);
+}
+
+.bodyer .right .about .about-info #line {
+    text-align: center;
+}
+
+.bodyer .right .about .about-info p a, .bodyer .right .about .about-info p tel{
+    color: RGB(92,92,92);
 }

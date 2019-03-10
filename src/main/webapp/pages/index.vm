@@ -9,8 +9,9 @@
 </head>
 <body>
     #parse("/pages/header.vm")
+<script src="/scripts/follow.js"></script>
     <div class="bodyer">
-        <div class="left">
+        <div class="left" id="loft">
             <ul>
                 <a href="" id="one"><li id="frist">推荐</li></a>
                 <a href=""><li>关注</li></a>
@@ -125,7 +126,7 @@
                         <span id="text">今日推荐</span>
                     </h3>
                 </div>
-                #foreach($num in [1..10])
+                #foreach($num in [1..8])
 
                 <div class="recommend-list">
                     <a href="">
@@ -138,6 +139,25 @@
                     </a>
                 </div>
                 #end
+            </div>
+            <div class="recommend about">
+                <div class="about-img">
+                    <img src="/images/about/qq.jpg" alt="">
+                    <img src="/images/about/weixin.png" alt="">
+                </div>
+                <div class="about-info">
+                    <p>
+                        <em class="about-info-left"><lable class="fa fa-qq"></lable> <span><a href="javascrit:void();">QQ客服</a></span></em>
+                        <em class="about-info-right"><lable class="fa fa-envelope"></lable> <span><a href="javascrit:void();">1789592159@qq.com</a></span></em>
+                    </p>
+                    <p>
+                        <em class="about-info-left"><lable class="fa fa-weixin"></lable> <span><a href="javascrit:void();">微信客服</a></span></em>
+                        <em class="about-info-right"><lable class="fa fa-phone"></lable> <tel>15579872216</tel></em>
+                    </p>
+                    <p id="line">
+                        &copy; 2018 洪哥哥版权所有
+                    </p>
+                </div>
             </div>
         </div>
     <div class="footer"></div>
