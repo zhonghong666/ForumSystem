@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>登录-斯贝儿</title>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/styles/admin/login.css">
+    <script language=javascript src='/scripts/jquery-3.3.1.min.js'></script>
+    <script src="/scripts/onClick.js"></script>
 </head>
 <body>
-    
+    <div class="login">
+        <from>
+            <h1>斯贝儿 后台管理系统</h1>
+            <div class="row">
+                <span class="row-left"><i class="fa fa-user-o"></i></span>
+                <span class="row-right"><input type="text" name="name" placeholder="账号"></span>
+            </div>
+            <div class="row">
+                <span class="row-left"><i class="fa fa-key"></i></span>
+                <span class="row-right"><input type="password" name="pwd" placeholder="密码"></span>
+            </div>
+            <div class="row code">
+                <span class="code-left">
+                    <input type="text" name="code" placeholder="请输入验证码">
+                </span>
+                <span class="code-right">
+                    <img src="/code/yzm" alt="" id="img" title="点击刷新" onclick="renovate()">
+                </span>
+            </div>
+            <div class="row button">
+                <input type="submit" value="登录">
+            </div>
+        </from>
+    </div>
+    <script>
+        function renovate() {
+            var img = document.getElementById("img");
+            img.src = img.src + "/" + Math.random();
+        }
+    </script>
 </body>
 </html>

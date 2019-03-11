@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/admin/bg.jpg");
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    width: 360px;
+    height: 360px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.login h1 {
+    color: RGB(112,112,112);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.login .row {
+    width: 90%;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border: 1px solid RGB(220,223,230);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.login .row span {
+    float: left;
+}
+
+.login .row .row-left {
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.login .row .row-left .fa {
+    color: RGB(192,196,204);
+}
+
+.login .row .row-right {
+    width: 90%;
+    height: 40px;
+}
+
+.login .row .row-right input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.login .code .code-left {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.login .code .code-right {
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.login .code .code-left input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.login .code .code-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.login .button {
+    border: none;
+}
+
+.login .button input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    /*background-color: transparent;*/
+    background-color: RGB(64,158,255);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}

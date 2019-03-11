@@ -138,6 +138,7 @@
                         </div>
                     </a>
                 </div>
+
                 #end
             </div>
             <div class="recommend about">
@@ -155,7 +156,7 @@
                         <em class="about-info-right"><lable class="fa fa-phone"></lable> <tel>15579872216</tel></em>
                     </p>
                     <p id="line">
-                        &copy; 2018 洪哥哥版权所有
+                        &copy; 2019 洪哥哥版权所有
                     </p>
                 </div>
             </div>

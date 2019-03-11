@@ -62,13 +62,11 @@
         <div class="bianje"></div>
     </div>
 </div>
-</body>
 <script>
     function renovate() {
         var img = document.getElementById("img");
         img.src = img.src + "/" + Math.random();
     }
 </script>
-</html>
 </body>
 </html>

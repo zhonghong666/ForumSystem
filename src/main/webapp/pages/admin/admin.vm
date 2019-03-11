@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>后台管理系统</title>
+    <link rel="stylesheet" href="/styles/admin/admin.css">
 </head>
 <body>
-    
+    <div class="left">
+
+    </div>
+    <div class="main">
+        <div class="header">
+
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
 </body>
 </html>
